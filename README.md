@@ -83,7 +83,7 @@ Are you sure want to start tracking the devel series? [y/N]
 ```
 
 ## Credits
-
+  * Thanks to [Wimpy's world](https://github.com/wimpysworld) for creating [rolling rhino](https://github.com/wimpysworld/rolling-rhino).
   * Thanks to [Stuart Langridge](https://twitter.com/sil) for [naming the project and proposing the idea]().
   * Thanks to [Sergio Schvezov](https://twitter.com/sergiusens) for [reminding me the `devel` series exists in Ubuntu](https://twitter.com/sergiusens/status/1276479711372292096).
   * Thanks to [RickAndTired](https://twitter.com/RickAndTired) for [answering the call for help](https://twitter.com/RickAndTired/status/1276729643068911618) and [making the Rolling Rhino logo](https://github.com/RickAndTired/Artwork).
