@@ -4,6 +4,8 @@ Convert Ubuntu into a *"rolling release"* that tracks the `devel` series; **for 
 
 With custom patches for using in bedrock linux ubuntu stratum.
 
+At moment these pactches are only for removing checks that are useless under bedrock configuration.
+
 <h1 align="center">
   <img src=".github/logo.png" alt="Rolling Rhino" />
   <br />
@@ -62,31 +64,19 @@ See the video where I worked with the community to put together the initial impl
 
 ## Usage
 
-  * Install Ubuntu Desktop, or one of the desktop flavours, **from a daily image**.
-    * [Ubuntu Desktop Daily Build](http://cdimage.ubuntu.com/daily-live/current/)
-    * [Kubuntu Daily Build](http://cdimage.ubuntu.com/kubuntu/daily-live/current/)
-    * [Lubuntu Daily Build](http://cdimage.ubuntu.com/lubuntu/daily-live/current/)
-    * [Ubuntu Budgie Daily Build](http://cdimage.ubuntu.com/ubuntu-budgie/daily-live/current/)
-    * [Ubuntu Kylin Daily Build](http://cdimage.ubuntu.com/ubuntukylin/daily-live/current/)
-    * [Ubuntu MATE Daily Build](http://cdimage.ubuntu.com/ubuntu-mate/daily-live/current/)
-    * [Ubuntu Studio Daily Build](http://cdimage.ubuntu.com/ubuntustudio/dvd/current/)
-    * [Xubuntu Daily Build](http://cdimage.ubuntu.com/xubuntu/daily-live/current/)
+  * Install Ubuntu to your bedrock system, using: `# brl fetch ubuntu`.
   * Boot the new install and use `rolling-rhino` to convert it to a rolling release.
 
 ```
 git clone https://github.com/wimpysworld/rolling-rhino.git
 cd rolling-rhino
-sudo ./rolling-rhino
+strat -r ubuntu sudo ./rolling-rhino
 ```
 
 Which will output something like this:
 
 ```
 Rolling Rhino 🦏
-  [+] INFO: lsb_release detected.
-  [+] INFO: Ubuntu detected.
-  [+] INFO: Ubuntu 20.04 LTS detected.
-  [+] INFO: Detected ubuntu-desktop.
   [+] INFO: No PPAs detected, this is good.
   [+] INFO: All checks passed.
 Are you sure want to start tracking the devel series? [y/N]
