@@ -91,7 +91,7 @@ Are you sure want to start tracking the devel series? [y/N]
 ## TODO
 
   - [x] Detect system is running an Ubuntu Development Branch.
-  - [x] Detect desktop meta packages.
+  ~~- [x] Detect desktop meta packages.~~ (removed in this patch)
   - [x] Detect PPAs.
   - [x] Detect `sources.list` is not already tracking `devel`.
   - [x] Create clean `sources.list` that tracks `devel`.
