@@ -2,6 +2,8 @@
 
 Convert Ubuntu into a *"rolling release"* that tracks the `devel` series; **for the toughest of Ubuntu users**.
 
+With custom patches for using in bedrock linux ubuntu stratum.
+
 <h1 align="center">
   <img src=".github/logo.png" alt="Rolling Rhino" />
   <br />
