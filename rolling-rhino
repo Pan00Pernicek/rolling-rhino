@@ -55,13 +55,6 @@ while [ $# -gt 0 ]; do
   esac
 done
 
-if which lsb_release 1>/dev/null; then
-  fancy_message info "lsb_release detected."
-else
-  fancy_message error "lsb_release not detected. Quitting."
-  exit 1
-fi
-
 if grep -q devel /etc/apt/sources.list; then
   fancy_message error "Already tracking the devel series. Nothing to do."
   exit 1
@@ -69,12 +62,6 @@ fi
 
 OS_CODENAME=$(lsb_release --codename --short)
 OS_ID=$(lsb_release --id --short)
-if [ "${OS_ID}" == "Ubuntu" ]; then
-  fancy_message info "Ubuntu detected."
-else
-  fancy_message error "${OS_ID} detected, which is not supported."
-  exit 1
-fi
 
 OS_DESCRIPTION=$(lsb_release --description --short)
 if [[ "${OS_DESCRIPTION}" == *"development branch"* ]]; then
@@ -152,7 +139,7 @@ deb ${ARCHIVE} devel-updates multiverse
 # deb-src ${ARCHIVE} devel-updates multiverse
 
 ## N.B. software from this repository may not have been tested as
-## extensively as that contained in the main release, although it includes
+## extensideb ${ARCHIVE} devel universevely as that contained in the main release, although it includes
 ## newer versions of some applications which may provide useful features.
 ## Also, please note that software in backports WILL NOT receive any review
 ## or updates from the Ubuntu security team.
