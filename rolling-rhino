@@ -74,22 +74,6 @@ else
   exit 1
 fi
 
-DESKTOP_FOUND=0
-for META in kubuntu-desktop lubuntu-desktop ubuntu-desktop ubuntu-budgie-desktop ubuntukylin-desktop ubuntu-mate-desktop ubuntustudio-desktop xubuntu-desktop ubuntu-wsl; do
-  INSTALLED=$(env LANG=C apt list --installed "${META}" 2>/dev/null | grep installed)
-
-  if [ -n "${INSTALLED}" ]; then
-    fancy_message info "Detected ${META}."
-    DESKTOP_FOUND=1
-    break
-  fi
-done
-
-if [ ${DESKTOP_FOUND} -eq 0 ]; then
-  fancy_message error "No installed desktop packages were detected. Quitting."
-  exit 1
-fi
-
 if [ -z "$(ls -A /etc/apt/sources.list.d/*.list 2>/dev/null)" ]; then
   fancy_message info "No PPAs detected, this is good."
 else
