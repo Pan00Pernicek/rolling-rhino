@@ -18,8 +18,7 @@ At moment these pactches are only for removing checks that are useless under bed
 
 ## Introduction
 
-Rolling Rhino is a simple tool to convert Ubuntu Desktop, and the official
-desktop flavours, that has been installed from a daily image into a
+Rolling Rhino is a simple tool to convert Ubuntu stratum, that has been installed from `brl fetch ubuntu` or a daily image (manuall add) into a
 *"rolling release"* by opting into and tracking the `devel` series.
 
 Rolling Rhino is intended for Ubuntu developers and experienced Ubuntu users
