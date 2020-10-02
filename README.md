@@ -44,23 +44,7 @@ current in-development series. But they are just that, warnings.
 
 ### Origins of Rolling Rhino
 
-[Ubuntu Podcast](https://ubuntupodcast.org) had feedback about making Ubuntu
-a rolling release, something we discussed during the main segment of
-[S13E12 - Red Sky in the Morning](https://ubuntupodcast.org/2020/06/11/s13e12-red-sky-in-the-morning/)
-and then covered again based on listener feedback during
-[S13E14 - Ace of Spades](https://ubuntupodcast.org/2020/06/25/s13e14-ace-of-spades/).
-During episode S13E14 guest presenter [Stuart Langridge](https://twitter.com/sil)
-proposed *"Ubuntu Rolling Rhino"* as the name for a rolling Ubuntu release
-along with some ideas as to how it could be implemented. [Sergio Schvezov](https://twitter.com/sergiusens) then
-[followed up via Twitter reminding us that the `devel` series exists in Ubuntu](https://twitter.com/sergiusens/status/1276479711372292096).
-This inspired me to create this `rolling-rhino` tool to somewhat implement
-Stuart's idea by taking advantage of the `devel` series.
-
-### Where it all came together
-
-See the video where I worked with the community to put together the initial implementation of `rolling-rhino`.
-
-[![Making Ubuntu a rolling release - Rolling Rhino](https://img.youtube.com/vi/Q4k8LqEUxlM/0.jpg)](https://www.youtube.com/watch?v=Q4k8LqEUxlM)
+See here https://github.com/wimpysworld/rolling-rhino/blob/master/README.md
 
 ## Usage
 
